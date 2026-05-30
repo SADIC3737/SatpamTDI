@@ -1,58 +1,82 @@
 ﻿[
     {
         "Path":  ".gitignore",
-        "Bytes":  288
+        "Bytes":  288,
+        "LastWriteTime":  "2026-05-30 20.15.01"
     },
     {
         "Path":  "AGENTS.md",
-        "Bytes":  7835
+        "Bytes":  7835,
+        "LastWriteTime":  "2026-05-18 12.43.35"
     },
     {
         "Path":  "HEARTBEAT.md",
-        "Bytes":  226
+        "Bytes":  226,
+        "LastWriteTime":  "2026-05-18 12.43.35"
     },
     {
         "Path":  "IDENTITY.md",
-        "Bytes":  412
+        "Bytes":  412,
+        "LastWriteTime":  "2026-05-18 13.07.13"
     },
     {
-        "Path":  "README.md",
-        "Bytes":  1123
-    },
-    {
-        "Path":  "restore.ps1",
-        "Bytes":  574
-    },
-    {
-        "Path":  "SOUL.md",
-        "Bytes":  1806
-    },
-    {
-        "Path":  "TOOLS.md",
-        "Bytes":  920
-    },
-    {
-        "Path":  "USER.md",
-        "Bytes":  555
-    },
-    {
-        "Path":  "memory\\2026-05-23.md",
-        "Bytes":  944
-    },
-    {
-        "Path":  "memory\\holidays_indonesia_2026.md",
-        "Bytes":  2269
+        "Path":  "manifest.json",
+        "Bytes":  1089,
+        "LastWriteTime":  "2026-05-30 20.15.02"
     },
     {
         "Path":  "memory\\.dreams\\events.jsonl",
-        "Bytes":  1065
+        "Bytes":  1065,
+        "LastWriteTime":  "2026-05-29 05.20.30"
     },
     {
         "Path":  "memory\\.dreams\\short-term-recall.json",
-        "Bytes":  1625
+        "Bytes":  1625,
+        "LastWriteTime":  "2026-05-29 05.20.30"
+    },
+    {
+        "Path":  "memory\\2026-05-23.md",
+        "Bytes":  944,
+        "LastWriteTime":  "2026-05-23 14.06.51"
+    },
+    {
+        "Path":  "memory\\holidays_indonesia_2026.md",
+        "Bytes":  2269,
+        "LastWriteTime":  "2026-05-09 20.01.32"
     },
     {
         "Path":  "notes\\energy-transition.md",
-        "Bytes":  7718
+        "Bytes":  7718,
+        "LastWriteTime":  "2026-05-30 08.20.21"
+    },
+    {
+        "Path":  "README.md",
+        "Bytes":  1123,
+        "LastWriteTime":  "2026-05-30 20.15.01"
+    },
+    {
+        "Path":  "restore.ps1",
+        "Bytes":  574,
+        "LastWriteTime":  "2026-05-30 20.15.01"
+    },
+    {
+        "Path":  "scripts\\backup-satpamtdi-to-github.ps1",
+        "Bytes":  2224,
+        "LastWriteTime":  "2026-05-30 20.36.28"
+    },
+    {
+        "Path":  "SOUL.md",
+        "Bytes":  1806,
+        "LastWriteTime":  "2026-05-18 12.43.35"
+    },
+    {
+        "Path":  "TOOLS.md",
+        "Bytes":  920,
+        "LastWriteTime":  "2026-05-18 12.43.35"
+    },
+    {
+        "Path":  "USER.md",
+        "Bytes":  555,
+        "LastWriteTime":  "2026-05-18 13.07.13"
     }
 ]
