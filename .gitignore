@@ -1,0 +1,25 @@
+﻿# Jangan commit file runtime/secret lokal
+.openclaw/
+*.env
+.env*
+*.key
+*.pem
+*.pfx
+*.crt
+*.cer
+*.token
+*token*
+*secret*
+*credential*
+*cookie*
+*.log
+node_modules/
+
+# Hindari artefak/report besar dan sensitif
+Security_Audit*/
+security-audit*/
+security-audits/
+*.zip
+*.xlsx
+*.csv
+*.html

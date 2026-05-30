@@ -1,0 +1,58 @@
+﻿[
+    {
+        "Path":  ".gitignore",
+        "Bytes":  288
+    },
+    {
+        "Path":  "AGENTS.md",
+        "Bytes":  7835
+    },
+    {
+        "Path":  "HEARTBEAT.md",
+        "Bytes":  226
+    },
+    {
+        "Path":  "IDENTITY.md",
+        "Bytes":  412
+    },
+    {
+        "Path":  "README.md",
+        "Bytes":  1123
+    },
+    {
+        "Path":  "restore.ps1",
+        "Bytes":  574
+    },
+    {
+        "Path":  "SOUL.md",
+        "Bytes":  1806
+    },
+    {
+        "Path":  "TOOLS.md",
+        "Bytes":  920
+    },
+    {
+        "Path":  "USER.md",
+        "Bytes":  555
+    },
+    {
+        "Path":  "memory\\2026-05-23.md",
+        "Bytes":  944
+    },
+    {
+        "Path":  "memory\\holidays_indonesia_2026.md",
+        "Bytes":  2269
+    },
+    {
+        "Path":  "memory\\.dreams\\events.jsonl",
+        "Bytes":  1065
+    },
+    {
+        "Path":  "memory\\.dreams\\short-term-recall.json",
+        "Bytes":  1625
+    },
+    {
+        "Path":  "notes\\energy-transition.md",
+        "Bytes":  7718
+    }
+]

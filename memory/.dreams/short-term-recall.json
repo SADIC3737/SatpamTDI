@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "updatedAt": "2026-05-28T22:20:30.322Z",
+  "entries": {
+    "memory:memory/2026-05-23.md:1:12": {
+      "key": "memory:memory/2026-05-23.md:1:12",
+      "path": "memory/2026-05-23.md",
+      "startLine": 1,
+      "endLine": 12,
+      "source": "memory",
+      "snippet": "## Timesheet Dashboard Filename Preference - Pak Bos meminta: setiap kirim dashboard HTML timesheet, nama file harus menyertakan nama bulan dan tahun dalam Bahasa Indonesia. - Format wajib: `Dashboard Timesheet <Bulan> <Tahun>.html` - Contoh: jika diminta bulan Mei 2026, filename attachment: `Dashboard Timesheet Mei 2026.html`. ## Automation: Timesheet Report H-5 Akhir Bulan - Pak Bos meminta schedule automation report timesheet: setiap H-5 akhir bulan, laporkan report timesheet di Telegram group Agent AI Command Center. - Cron job dibuat: `Timesheet report H-5 akhir bulan ke Agent AI Command Center` (id: f79a3e71-779e-47dc-8937-efdf40c61e8e). - Schedule cron: `0 9 23-26 * *` timezone `A",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.9938239230570467,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-05-25T21:09:15.485Z",
+      "lastRecalledAt": "2026-05-28T22:20:30.322Z",
+      "queryHashes": [
+        "6aacc0d1074d",
+        "7ad516909fee",
+        "82c9bd60fe2b",
+        "942e4894a4ab"
+      ],
+      "recallDays": [
+        "2026-05-26",
+        "2026-05-29"
+      ],
+      "conceptTags": [
+        "2026.html",
+        "h-5",
+        "23-26",
+        "timesheet",
+        "dashboard",
+        "filename",
+        "preference",
+        "pak"
+      ]
+    }
+  }
+}
