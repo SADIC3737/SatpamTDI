@@ -1,13 +1,28 @@
 ﻿[
     {
         "Path":  ".gitignore",
-        "Bytes":  288,
-        "LastWriteTime":  "2026-05-30 20.15.01"
+        "Bytes":  436,
+        "LastWriteTime":  "2026-05-30 20.42.54"
     },
     {
         "Path":  "AGENTS.md",
         "Bytes":  7835,
         "LastWriteTime":  "2026-05-18 12.43.35"
+    },
+    {
+        "Path":  "gridscale-apa-backup-workflow\\BLUEPRINT.md",
+        "Bytes":  3393,
+        "LastWriteTime":  "2026-05-20 13.44.56"
+    },
+    {
+        "Path":  "gridscale-apa-backup-workflow\\scripts\\backup-gridscale-apa-project.ps1",
+        "Bytes":  6275,
+        "LastWriteTime":  "2026-05-17 17.42.40"
+    },
+    {
+        "Path":  "gridscale-apa-backup-workflow\\WORKFLOW.md",
+        "Bytes":  3230,
+        "LastWriteTime":  "2026-05-20 13.21.41"
     },
     {
         "Path":  "HEARTBEAT.md",
@@ -21,8 +36,8 @@
     },
     {
         "Path":  "manifest.json",
-        "Bytes":  1089,
-        "LastWriteTime":  "2026-05-30 20.15.02"
+        "Bytes":  2063,
+        "LastWriteTime":  "2026-05-30 20.36.44"
     },
     {
         "Path":  "memory\\.dreams\\events.jsonl",
@@ -51,23 +66,93 @@
     },
     {
         "Path":  "README.md",
-        "Bytes":  1123,
-        "LastWriteTime":  "2026-05-30 20.15.01"
+        "Bytes":  2158,
+        "LastWriteTime":  "2026-05-30 20.43.15"
     },
     {
         "Path":  "restore.ps1",
-        "Bytes":  574,
-        "LastWriteTime":  "2026-05-30 20.15.01"
+        "Bytes":  637,
+        "LastWriteTime":  "2026-05-30 20.43.28"
+    },
+    {
+        "Path":  "schedules\\cron-jobs-backup.json",
+        "Bytes":  3795,
+        "LastWriteTime":  "2026-05-30 20.42.23"
+    },
+    {
+        "Path":  "schedules\\README.md",
+        "Bytes":  526,
+        "LastWriteTime":  "2026-05-30 20.42.23"
+    },
+    {
+        "Path":  "schedules\\restore-schedules.md",
+        "Bytes":  1134,
+        "LastWriteTime":  "2026-05-30 20.42.23"
     },
     {
         "Path":  "scripts\\backup-satpamtdi-to-github.ps1",
-        "Bytes":  2224,
-        "LastWriteTime":  "2026-05-30 20.36.28"
+        "Bytes":  3635,
+        "LastWriteTime":  "2026-05-30 20.42.41"
     },
     {
         "Path":  "SOUL.md",
         "Bytes":  1806,
         "LastWriteTime":  "2026-05-18 12.43.35"
+    },
+    {
+        "Path":  "timesheet-reports\\BLUEPRINT.md",
+        "Bytes":  7481,
+        "LastWriteTime":  "2026-05-20 15.58.07"
+    },
+    {
+        "Path":  "timesheet-reports\\config.json",
+        "Bytes":  943,
+        "LastWriteTime":  "2026-05-26 04.32.01"
+    },
+    {
+        "Path":  "timesheet-reports\\config.redacted.json",
+        "Bytes":  1615,
+        "LastWriteTime":  "2026-05-16 14.08.37"
+    },
+    {
+        "Path":  "timesheet-reports\\README.md",
+        "Bytes":  2182,
+        "LastWriteTime":  "2026-05-16 14.08.37"
+    },
+    {
+        "Path":  "timesheet-reports\\scripts\\fetch_timesheet.py",
+        "Bytes":  9232,
+        "LastWriteTime":  "2026-05-16 14.08.37"
+    },
+    {
+        "Path":  "timesheet-reports\\scripts\\fetch_timesheet_node.js",
+        "Bytes":  6853,
+        "LastWriteTime":  "2026-05-16 14.35.26"
+    },
+    {
+        "Path":  "timesheet-reports\\scripts\\generate_dashboard.py",
+        "Bytes":  23717,
+        "LastWriteTime":  "2026-05-16 14.08.37"
+    },
+    {
+        "Path":  "timesheet-reports\\scripts\\generate_dashboard_sample_style_node.js",
+        "Bytes":  8775,
+        "LastWriteTime":  "2026-05-20 15.16.36"
+    },
+    {
+        "Path":  "timesheet-reports\\scripts\\generate_dashboard_standard_node.js",
+        "Bytes":  21339,
+        "LastWriteTime":  "2026-05-20 15.57.01"
+    },
+    {
+        "Path":  "timesheet-reports\\scripts\\generate_mei2026_node.js",
+        "Bytes":  13713,
+        "LastWriteTime":  "2026-05-20 15.04.44"
+    },
+    {
+        "Path":  "timesheet-reports\\WORKFLOW.md",
+        "Bytes":  6321,
+        "LastWriteTime":  "2026-05-16 14.44.37"
     },
     {
         "Path":  "TOOLS.md",

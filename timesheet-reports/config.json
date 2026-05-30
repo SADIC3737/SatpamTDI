@@ -1,0 +1,33 @@
+{
+    "_comment": "Konfigurasi utama Timesheet Reporting System â€” edit file ini untuk ganti target/credentials",
+    "google_sheets": {
+        "spreadsheet_id": "13-oHyxeE5pEdzSCqT9G3XP5Mko0nsvq8TY-xpuyyJfY",
+        "sheet_tab": "Timesheet",
+        "range": "'Timesheet'!1:5000",
+        "service_account_key": "C:/Users/Administrator/.openclaw/config/timesheet-sa-key.json",
+        "columns": {
+            "0": "index",
+            "1": "name",
+            "2": "date (M/D/YYYY)",
+            "3": "category",
+            "4": "project",
+            "5": "task",
+            "6": "hours",
+            "7": "notes"
+        }
+    },
+    "telegram": {
+        "bot_token": "",
+        "chat_ids": [
+            "telegram:544318970"
+        ]
+    },
+    "company": {
+        "name": "PT TwinK Digital Indonesia",
+        "work_hours_per_day": 8
+    },
+    "output": {
+        "data_dir": "data",
+        "output_dir": "output"
+    }
+}

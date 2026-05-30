@@ -23,3 +23,8 @@ security-audits/
 *.xlsx
 *.csv
 *.html
+
+# Workflow runtime outputs/logs/data tidak dibackup ke GitHub
+timesheet-reports/data/
+timesheet-reports/output/
+gridscale-apa-backup-workflow/logs/

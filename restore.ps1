@@ -2,7 +2,7 @@
 $ErrorActionPreference = 'Stop'
 $repo = Split-Path -Parent $MyInvocation.MyCommand.Path
 $workspace = 'C:\Users\Administrator\.openclaw\workspace'
-$items = @('AGENTS.md','SOUL.md','IDENTITY.md','USER.md','TOOLS.md','HEARTBEAT.md','notes','memory')
+$items = @('AGENTS.md','SOUL.md','IDENTITY.md','USER.md','TOOLS.md','HEARTBEAT.md','notes','memory','timesheet-reports','gridscale-apa-backup-workflow','schedules')
 foreach ($item in $items) {
   $src = Join-Path $repo $item
   if (Test-Path $src) {

@@ -1,0 +1,71 @@
+﻿{
+  "exportedAt": "2026-05-30 20:41 Asia/Jakarta",
+  "source": "OpenClaw cron list",
+  "notes": "Sanitized schedule backup. Recreate carefully on new server after paths, credentials, and messaging targets are verified.",
+  "jobs": [
+    {
+      "name": "gridscale-apa-backup-daily-2357",
+      "enabled": true,
+      "schedule": { "kind": "cron", "expr": "57 23 * * *", "tz": "Asia/Jakarta" },
+      "sessionTarget": "isolated",
+      "description": "Backup harian GridScale X APA setiap hari pukul 23:57 WIB dan kirim laporan ke dua group Telegram + grup WhatsApp Engineering TDI.",
+      "workflowDir": "C:\\Users\\Administrator\\.openclaw\\workspace\\gridscale-apa-backup-workflow",
+      "script": "C:\\Users\\Administrator\\.openclaw\\workspace\\gridscale-apa-backup-workflow\\scripts\\backup-gridscale-apa-project.ps1",
+      "targets": {
+        "telegram": ["-1002419486905", "-1003941623277"],
+        "whatsapp": ["120363260514869219@g.us"]
+      },
+      "restoreNotes": [
+        "Verify X: mapping to \\\\win01-servertdi\\GRIDSCALEXAPA.",
+        "Verify T: destination path exists and is writable.",
+        "Run script manually once before enabling schedule."
+      ]
+    },
+    {
+      "name": "timesheet-dashboard-current-month-mondays",
+      "enabled": true,
+      "schedule": { "kind": "cron", "expr": "0 8 * * 1", "tz": "Asia/Jakarta" },
+      "sessionTarget": "isolated",
+      "description": "Generate dashboard timesheet report untuk bulan berjalan setiap hari Senin dan kirim HTML standar ke Telegram group Command Center.",
+      "workflowDir": "C:\\Users\\Administrator\\.openclaw\\workspace\\timesheet-reports",
+      "scripts": [
+        "scripts/fetch_timesheet_node.js",
+        "scripts/generate_dashboard_standard_node.js"
+      ],
+      "targets": { "telegram": ["-1003941623277"] },
+      "restoreNotes": [
+        "Verify timesheet-reports/config.json.",
+        "Restore Google service account key outside GitHub backup.",
+        "Run fetch and generate manually once before enabling schedule."
+      ]
+    },
+    {
+      "name": "Weekly TDI website health + certificate monitor",
+      "enabled": true,
+      "schedule": { "kind": "cron", "expr": "0 12 * * 5", "tz": "Asia/Jakarta" },
+      "sessionTarget": "isolated",
+      "description": "Cek mingguan website TDI www.twinkdigital.co.id setiap Jumat jam 12:00 WIB; laporkan hasil aman/error/certificate expired ke grup Agent AI Command Center.",
+      "targetWebsite": "https://www.twinkdigital.co.id",
+      "targets": { "telegram": ["-1003941623277"] }
+    },
+    {
+      "name": "Timesheet report H-5 akhir bulan ke Agent AI Command Center",
+      "enabled": true,
+      "schedule": { "kind": "cron", "expr": "0 9 23-26 * *", "tz": "Asia/Jakarta" },
+      "sessionTarget": "session:agent:main:telegram:group:-1003941623277",
+      "description": "Setiap jam 09:00 WIB tanggal 23-26, agent mengecek apakah hari itu H-5 akhir bulan; jika ya, mengirim report timesheet HTML ke group.",
+      "targets": { "telegram": ["-1003941623277"] },
+      "restoreNotes": ["This job intentionally runs on dates 23-26 and checks H-5 logic inside the agent prompt."]
+    },
+    {
+      "name": "weekly-satpamtdi-github-backup",
+      "enabled": true,
+      "schedule": { "kind": "cron", "expr": "30 20 * * 6", "tz": "Asia/Jakarta" },
+      "sessionTarget": "isolated",
+      "description": "Backup mingguan workspace continuity, workflows, dan schedule Satpam TDI ke GitHub repo SADIC3737/SatpamTDI setiap Sabtu 20:30 WIB.",
+      "workflowDir": "C:\\Users\\Administrator\\.openclaw\\workspace\\SatpamTDI-github-backup",
+      "script": "C:\\Users\\Administrator\\.openclaw\\workspace\\SatpamTDI-github-backup\\scripts\\backup-satpamtdi-to-github.ps1",
+      "targets": { "telegram": ["544318970"] }
+    }
+  ]
+}

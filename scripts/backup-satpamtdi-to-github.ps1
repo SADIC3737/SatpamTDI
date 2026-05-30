@@ -44,6 +44,47 @@ foreach ($dir in $includeDirs) {
   }
 }
 
+# Workflow directories required for redeploying automations.
+# Runtime outputs/logs/data are intentionally excluded by copying only safe subfolders/files.
+$workflowCopies = @(
+  [PSCustomObject]@{
+    Name = 'timesheet-reports'
+    Files = @('BLUEPRINT.md','README.md','WORKFLOW.md','config.json','config.redacted.json')
+    Directories = @('scripts')
+  },
+  [PSCustomObject]@{
+    Name = 'gridscale-apa-backup-workflow'
+    Files = @('BLUEPRINT.md','WORKFLOW.md')
+    Directories = @('scripts')
+  }
+)
+
+foreach ($workflow in $workflowCopies) {
+  $sourceRoot = Join-Path $workspace $workflow.Name
+  $destRoot = Join-Path $repo $workflow.Name
+  if (Test-Path $sourceRoot) {
+    if (Test-Path $destRoot) { Remove-Item $destRoot -Recurse -Force }
+    New-Item -ItemType Directory -Path $destRoot -Force | Out-Null
+
+    foreach ($file in $workflow.Files) {
+      $sourceFile = Join-Path $sourceRoot $file
+      if (Test-Path $sourceFile) {
+        Copy-Item $sourceFile -Destination (Join-Path $destRoot $file) -Force
+      }
+    }
+
+    foreach ($dir in $workflow.Directories) {
+      $sourceDir = Join-Path $sourceRoot $dir
+      if (Test-Path $sourceDir) {
+        Copy-Item $sourceDir -Destination (Join-Path $destRoot $dir) -Recurse -Force
+      }
+    }
+  }
+}
+
+# Schedule backup docs are maintained in the backup repo itself.
+# Keep schedules/ under version control, but do not overwrite it from workspace root.
+
 # Refresh manifest after copying.
 $manifest = Get-ChildItem $repo -Recurse -File -Force |
   Where-Object { $_.FullName -notmatch '\\.git\\' } |
