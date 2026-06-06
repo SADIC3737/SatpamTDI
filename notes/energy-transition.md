@@ -55,3 +55,15 @@ ESG atau **Environmental, Social, and Governance** di Pertamina merupakan kerang
 - **Governance:** Berfokus pada tata kelola yang transparan, etika, dan akuntabilitas, termasuk kebijakan antikorupsi, penerapan Good Corporate Governance, kepatuhan terhadap regulasi, transparansi rantai pasok, serta penguatan manajemen risiko dan penilaian ESG berbasis standar global.
 
 Dalam konteks transisi energi, ESG menjadi instrumen penting untuk memastikan bahwa inisiatif rendah karbon tidak hanya berdampak pada aspek lingkungan, tetapi juga selaras dengan keberlanjutan sosial, tata kelola yang baik, dan kelayakan bisnis jangka panjang.
+
+### 2026-06-04 — Pertumbuhan Distributed Energy Resources menuju 2030
+
+Kebutuhan dan pemanfaatan **Distributed Energy Resources (DER)** diperkirakan akan meningkat signifikan hingga tahun **2030**. Secara umum, kapasitas atau kebutuhan terkait DER diproyeksikan dapat meningkat sekitar **2 kali lipat** sampai 2030. Selain itu, berdasarkan suatu studi, pertumbuhan DER bahkan diperkirakan dapat mencapai sekitar **7 kali lipat** hingga 2030. Hal ini menunjukkan bahwa DER akan menjadi salah satu elemen penting dalam transisi energi, khususnya dalam mendukung sistem energi yang lebih terdistribusi, fleksibel, resilien, dan mampu mengakomodasi peningkatan penetrasi energi terbarukan.
+
+### 2026-06-04 — Grid Management sebagai Jawaban atas Tantangan Transisi Energi
+
+**Grid management** menjadi salah satu aspek kunci dalam menjawab tantangan transisi energi, terutama ketika sistem kelistrikan semakin kompleks akibat meningkatnya penetrasi energi terbarukan, Distributed Energy Resources (DER), elektrifikasi, serta kebutuhan keandalan pasokan. Pengelolaan jaringan yang lebih cerdas, fleksibel, dan responsif diperlukan agar sistem energi mampu menyeimbangkan suplai dan permintaan secara real-time, mengurangi risiko gangguan, meningkatkan efisiensi operasi, serta memastikan integrasi sumber energi baru dapat berjalan aman dan andal.
+
+### 2026-06-04 — Komitmen Presiden dalam Pengembangan EBT dan Transisi Energi
+
+Komitmen Presiden terhadap pengembangan **Energi Baru Terbarukan (EBT)** dan percepatan **transisi energi** menjadi sinyal penting bagi arah kebijakan energi nasional. Dukungan di tingkat kepemimpinan tertinggi diperlukan untuk memperkuat kepastian regulasi, mempercepat investasi, mendorong pembangunan infrastruktur energi bersih, serta memastikan koordinasi lintas kementerian, BUMN, pemerintah daerah, dan sektor swasta. Dengan adanya komitmen tersebut, pengembangan EBT dan agenda transisi energi dapat bergerak lebih terarah, terukur, dan selaras dengan kebutuhan ketahanan energi serta target pengurangan emisi jangka panjang.

@@ -1,0 +1,9 @@
+const fs=require('fs'),path=require('path');
+const BASE=path.resolve(__dirname,'..');
+const d=JSON.parse(fs.readFileSync(path.join(BASE,'data','mei2026_data.json'),'utf8'));
+const out=path.join(BASE,'output','mei2026','person-detail-test-lite.html');
+const people=Object.entries(d.staff).map(([n,s])=>({n,h:s.total_hours,days:Object.keys(s.daily||{}).length,projects:Object.entries(s.projects||{}).sort((a,b)=>b[1]-a[1]).map(([k,v])=>`${k}: ${v}j`).join('\n'),tasks:(s.tasks||[]).map(t=>`${t.date} | ${t.project} | ${t.task} | ${t.time}j | ${t.notes||''}`).join('\n')})).sort((a,b)=>a.n.localeCompare(b.n));
+const js=JSON.stringify({expected:d.expected_hours,people}).replace(/</g,'\\u003c');
+const html='<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>person-detail-test-lite.html</title><style>body{font-family:Arial;margin:12px}select{width:100%;font-size:16px;padding:8px}.box{border:1px solid #ccc;padding:10px;margin:10px 0;border-radius:8px}pre{white-space:pre-wrap;font-size:12px}</style></head><body><h2>Detail Timesheet Per Orang - Mei 2026</h2><p>Test case ringan HTML. Pilih orang:</p><select id=s></select><div class=box id=sum></div><h3>Project</h3><pre id=p></pre><h3>Detail Record</h3><pre id=t></pre><script>const D='+js+';const s=document.getElementById("s");D.people.forEach(function(p,i){s.innerHTML+="<option value=\""+i+"\">"+p.n+"</option>"});function r(){const x=D.people[+s.value];sum.innerHTML="<b>"+x.n+"</b><br>Total: "+x.h+" jam<br>Utilisasi: "+(x.h/D.expected*100).toFixed(1)+"%<br>Hari input: "+x.days;p.textContent=x.projects;t.textContent=x.tasks}s.onchange=r;r()</script></body></html>';
+fs.writeFileSync(out,html);
+console.log(out,Buffer.byteLength(html),Buffer.from(html).toString('base64').length);
