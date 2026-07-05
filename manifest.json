@@ -37,7 +37,7 @@
     {
         "Path":  "manifest.json",
         "Bytes":  5688,
-        "LastWriteTime":  "2026-06-13 20.30.12"
+        "LastWriteTime":  "2026-06-20 20.30.11"
     },
     {
         "Path":  "memory\\.dreams\\events.jsonl",
@@ -178,6 +178,11 @@
         "Path":  "timesheet-reports\\scripts\\generate_person_detail_test_node.js",
         "Bytes":  11542,
         "LastWriteTime":  "2026-05-31 06.28.52"
+    },
+    {
+        "Path":  "timesheet-reports\\scripts\\make_juni_lite.js",
+        "Bytes":  3058,
+        "LastWriteTime":  "2026-06-25 09.07.40"
     },
     {
         "Path":  "timesheet-reports\\WORKFLOW.md",
