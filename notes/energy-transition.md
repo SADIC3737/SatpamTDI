@@ -288,3 +288,98 @@ Slide **Siemens** bertajuk **Digital Substation — Process Bus Overview** mengg
 **Makna strategis untuk transisi energi:**
 
 Digital substation dan process bus memungkinkan sistem gardu induk menjadi lebih terukur, terintegrasi, aman, dan siap mendukung operasi jaringan yang semakin kompleks. Dalam transisi energi, kebutuhan terhadap otomasi gardu, proteksi cerdas, power quality monitoring, fault recording, konektivitas SCADA, cybersecurity, serta analytics akan meningkat seiring pertumbuhan EBT, DER, BESS, EV charging, dan beban industri baru. Teknologi seperti ini relevan untuk dibahas dalam konteks **smart grid**, **grid management**, **substation automation**, **asset digitalization**, dan **cybersecurity in power systems**.
+
+### 2026-07-05 — Pembacaan Gambar Teknis untuk Cable Schedule External Cables 110VDC
+
+Foto menunjukkan proses penyusunan **Cable Schedule / Cable Connection List – External Cables** dari gambar teknis untuk proyek **GI 150kV – Bay Panel Motor Supply 110VDC (CB & Isolator Motor)**. Informasi ini penting sebagai referensi cara membaca gambar engineering dan menerjemahkannya menjadi struktur data kabel eksternal yang rapi, khususnya untuk kebutuhan dokumentasi panel, marshalling kiosk, terminal block, serta koneksi antarperalatan.
+
+**Prinsip pembacaan dari foto:**
+
+- Area yang ditandai **stabilo kuning** mengacu pada identitas **panel** atau equipment. Contoh yang disebutkan: **=E02 +S1** sebagai panel **Marshalling Kios**.
+- Area yang ditandai **hijau** mengacu pada **kabel eksternal antar panel**.
+- Informasi pada drawing dapat diterjemahkan menjadi tabel cable schedule dengan struktur minimal:
+  - Cable number.
+  - From panel / equipment.
+  - From terminal block.
+  - To panel / equipment.
+  - To terminal block.
+  - Function / description.
+  - Voltage.
+  - Number of core / tipe kabel.
+  - Remarks atau catatan konfirmasi.
+
+**Contoh struktur yang terlihat pada file hasil:**
+
+- Judul dokumen: **CABLE SCHEDULE / CABLE CONNECTION LIST – EXTERNAL CABLES**.
+- Project: **GI 150kV – Bay Panel Motor Supply 110VDC (CB & Isolator Motor)**.
+- Drawing reference: **Common Drawing (Ring Loop)**.
+- Kabel yang tercatat menggunakan penomoran **C-01 sampai C-08**.
+- Fungsi utama kabel meliputi:
+  - **110VDC Supply #1 (1L+ / 1L-) – Ring Loop Incoming**.
+  - **110VDC Supply #2 (2L+ / 2L-) – Ring Loop Incoming**.
+  - **110VDC Supply #1 (1L+ / 1L-) – Ring Loop Outgoing**.
+  - **110VDC Supply #2 (2L+ / 2L-) – Ring Loop Outgoing**.
+  - **CB Motor Supply 110VDC**.
+  - **Isolator Motor Supply 110VDC**.
+- Tegangan sistem yang digunakan adalah **110 VDC**.
+
+**Catatan teknis yang perlu diperhatikan:**
+
+1. Data yang ditandai **TBC (To Be Confirmed)** atau berwarna kuning berarti informasi belum tercantum lengkap pada drawing dan perlu dikonfirmasi melalui **common drawing ring loop** atau **vendor drawing** terkait.
+2. Ukuran dan jenis kabel eksternal belum sepenuhnya tercantum pada drawing. Pada catatan file terlihat referensi bahwa wiring internal panel menggunakan **GY 2,5 mm²** untuk jalur motor dan **NYAF 1,5 mm² GY** sebagai default; karena itu kabel eksternal motor supply perlu ditentukan atau dikonfirmasi kembali sesuai standar proyek.
+3. Polaritas terminal dibaca berdasarkan prinsip bahwa **terminal nomor kecil adalah kutub positif (+)** dan terminal pasangannya adalah **kutub negatif (-)**, mengikuti penandaan **1L+/1L-** dan **2L+/2L-** pada drawing.
+4. Kabel **C-01 sampai C-04** merupakan bagian dari **ring loop 110VDC antar marshalling kiosk**, dengan pola koneksi **daisy chain** dari previous panel menuju **+S1**, lalu ke next panel.
+
+**Makna strategis untuk catatan Energy Transition:**
+
+Walaupun isi foto bersifat teknis kelistrikan, informasi ini relevan sebagai fondasi kemampuan membaca dan menyusun dokumentasi engineering untuk proyek infrastruktur energi. Transisi energi membutuhkan dokumentasi sistem kelistrikan yang akurat, termasuk cable schedule, koneksi panel, terminal block, suplai DC, ring loop, dan interkoneksi antarperalatan. Kerapian dokumentasi seperti ini penting untuk mendukung keandalan operasi, keselamatan pekerjaan, kemudahan commissioning, pemeliharaan, audit teknis, serta pengembangan sistem kelistrikan yang lebih modern dan siap mendukung integrasi teknologi baru.
+
+Catatan kehati-hatian: beberapa detail pada foto merupakan hasil pembacaan dari screenshot dan terdapat bagian yang perlu diverifikasi ulang dari drawing asli, terutama nomor drawing, ukuran kabel eksternal, terminal yang berstatus TBC, serta detail jumlah core.
+
+### 2026-06-07 — Peta Supergrid Indonesia 2060 sebagai Infrastruktur Penghubung EBT dan Pusat Beban
+
+Slide **Peta Supergrid Indonesia Tahun 2060** menunjukkan konsep pengembangan jaringan transmisi skala besar atau **supergrid** untuk mengatasi ketidaksesuaian lokasi antara pusat permintaan listrik dan sumber energi terbarukan. Inti pesannya adalah bahwa pusat beban utama berada di **Pulau Jawa**, sementara banyak sumber **Energi Terbarukan (ET/EBT)** berada di luar Pulau Jawa. Karena itu, interkoneksi antarwilayah menjadi infrastruktur kunci agar potensi energi terbarukan di berbagai daerah dapat dikirimkan ke pusat-pusat konsumsi listrik.
+
+**Poin utama dari slide:**
+
+- Supergrid diarahkan untuk mengatasi **mismatch demand** dengan mengirimkan energi terbarukan dari daerah sumber ET/EBT ke pusat beban.
+- Pusat beban utama disebut berada di **Pulau Jawa**.
+- Sumber energi terbarukan banyak berada di **luar Pulau Jawa**.
+- Terdapat kebutuhan penguatan interkoneksi antar pulau untuk mendukung pemanfaatan energi terbarukan secara nasional.
+
+**Rencana atau tahapan interkoneksi yang terbaca dari slide:**
+
+- **Interkoneksi Sumatera–Batam:** 2028.
+- **Interkoneksi Sumatera–Jawa:** mulai beroperasi tahun 2031.
+- **Interkoneksi Nusa Tenggara–Jawa:** bertahap mulai 2037 sampai 2045.
+- **Interkoneksi Kalimantan–Jawa:** 2040.
+- **Interkoneksi Kalimantan–Sulawesi:** 2041.
+- **Interkoneksi Nusa Tenggara–Sulawesi:** 2045.
+
+**Makna strategis untuk transisi energi:**
+
+Peta supergrid menegaskan bahwa transisi energi Indonesia tidak cukup hanya membangun pembangkit EBT di lokasi sumber daya. Diperlukan jaringan transmisi dan interkoneksi nasional yang mampu memindahkan energi dari wilayah kaya sumber terbarukan menuju pusat beban industri, komersial, dan rumah tangga. Supergrid menjadi enabler penting untuk meningkatkan penetrasi EBT, mengurangi keterbatasan lokasi pembangkit, memperkuat keandalan sistem, mendukung pemerataan pasokan listrik antarwilayah, serta membuka peluang investasi pada transmisi, grid management, HVDC/HVAC interconnection, storage, dan sistem operasi jaringan yang lebih cerdas.
+
+Catatan kehati-hatian: beberapa angka dan detail pada peta tidak seluruhnya terbaca jelas dari foto. Informasi tahapan interkoneksi di atas sebaiknya diverifikasi kembali dari dokumen presentasi asli sebelum dipakai dalam dokumen formal.
+
+### 2026-06-07 — Spectrum Power Siemens di Indonesia sebagai Referensi Control Center Kelistrikan
+
+Slide **Siemens — Spectrum Power in Indonesia** menunjukkan sebaran implementasi atau referensi sistem **Spectrum Power** di Indonesia. Informasi ini penting karena Spectrum Power berkaitan dengan sistem **control center**, operasi jaringan, monitoring sistem tenaga listrik, dan pengelolaan infrastruktur kelistrikan yang semakin penting dalam agenda transisi energi.
+
+**Poin utama dari slide:**
+
+- Terdapat indikasi sekitar **15 control center (CC)** atau referensi implementasi di Indonesia.
+- Kategori yang terlihat pada slide mencakup:
+  - **20 kV (DCC / Distribution Control Center)**.
+  - **150 kV & 20 kV (T/DCC atau kombinasi transmission-distribution control center; perlu verifikasi istilah asli)**.
+  - **150 kV (TCC / Transmission Control Center)**.
+  - **500 kV (TCC)**.
+  - **Industry / Infrastructure**.
+- End user yang tercantum pada slide: **PLN, Angkasa Pura, LRT, dan Inalum**.
+- Titik implementasi/referensi terlihat tersebar di berbagai wilayah Indonesia, termasuk Sumatra, Jawa, Kalimantan, Sulawesi, Nusa Tenggara, Maluku, dan Papua.
+
+**Makna strategis untuk transisi energi:**
+
+Keberadaan Spectrum Power sebagai platform control center menunjukkan pentingnya digitalisasi operasi sistem kelistrikan dalam mendukung transisi energi. Ketika penetrasi EBT, DER, BESS, EV charging, dan beban industri baru meningkat, sistem operasi jaringan perlu mampu memantau kondisi grid secara real-time, mengelola aliran daya, menjaga keandalan, serta mendukung koordinasi antara sistem transmisi, distribusi, dan infrastruktur strategis. Referensi implementasi di berbagai wilayah Indonesia dapat menjadi bahan penting untuk memahami kesiapan ekosistem control center, peluang modernisasi SCADA/EMS/DMS, dan kebutuhan integrasi grid management secara nasional.
+
+Catatan kehati-hatian: beberapa label dan angka pada foto tidak seluruhnya terbaca sempurna. Istilah kategori seperti TCC/DCC/T-DCC dan jumlah detail implementasi sebaiknya diverifikasi kembali dari slide asli sebelum digunakan dalam dokumen formal.
