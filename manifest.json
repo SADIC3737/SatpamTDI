@@ -37,7 +37,7 @@
     {
         "Path":  "manifest.json",
         "Bytes":  5976,
-        "LastWriteTime":  "2026-07-21 10.54.35"
+        "LastWriteTime":  "2026-07-25 20.30.05"
     },
     {
         "Path":  "memory\\.dreams\\events.jsonl",
@@ -143,6 +143,11 @@
         "Path":  "timesheet-reports\\scripts\\generate_dashboard.py",
         "Bytes":  23717,
         "LastWriteTime":  "2026-05-16 14.08.37"
+    },
+    {
+        "Path":  "timesheet-reports\\scripts\\generate_dashboard_node.js",
+        "Bytes":  21913,
+        "LastWriteTime":  "2026-07-26 09.07.58"
     },
     {
         "Path":  "timesheet-reports\\scripts\\generate_dashboard_person_detail_v2_node.js",
