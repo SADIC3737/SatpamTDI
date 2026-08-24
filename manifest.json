@@ -36,8 +36,8 @@
     },
     {
         "Path":  "manifest.json",
-        "Bytes":  5976,
-        "LastWriteTime":  "2026-07-25 20.30.05"
+        "Bytes":  6142,
+        "LastWriteTime":  "2026-08-13 14.32.45"
     },
     {
         "Path":  "memory\\.dreams\\events.jsonl",
@@ -63,6 +63,11 @@
         "Path":  "memory\\2026-07-05.md",
         "Bytes":  3315,
         "LastWriteTime":  "2026-07-05 20.45.34"
+    },
+    {
+        "Path":  "memory\\2026-08-13.md",
+        "Bytes":  1160,
+        "LastWriteTime":  "2026-08-13 14.57.57"
     },
     {
         "Path":  "memory\\holidays_indonesia_2026.md",
