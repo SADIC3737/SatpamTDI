@@ -36,8 +36,8 @@
     },
     {
         "Path":  "manifest.json",
-        "Bytes":  6142,
-        "LastWriteTime":  "2026-08-13 14.32.45"
+        "Bytes":  6274,
+        "LastWriteTime":  "2026-08-24 16.02.12"
     },
     {
         "Path":  "memory\\.dreams\\events.jsonl",
@@ -68,6 +68,11 @@
         "Path":  "memory\\2026-08-13.md",
         "Bytes":  1160,
         "LastWriteTime":  "2026-08-13 14.57.57"
+    },
+    {
+        "Path":  "memory\\2026-08-26.md",
+        "Bytes":  932,
+        "LastWriteTime":  "2026-08-26 09.06.11"
     },
     {
         "Path":  "memory\\holidays_indonesia_2026.md",
@@ -143,6 +148,11 @@
         "Path":  "timesheet-reports\\scripts\\fetch_timesheet_node.js",
         "Bytes":  6853,
         "LastWriteTime":  "2026-05-16 14.35.26"
+    },
+    {
+        "Path":  "timesheet-reports\\scripts\\gen_clean.js",
+        "Bytes":  20715,
+        "LastWriteTime":  "2026-08-24 16.05.34"
     },
     {
         "Path":  "timesheet-reports\\scripts\\generate_dashboard.py",
